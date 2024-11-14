@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('assets/fonts/sf-pro-display-SFPRODISPLAYREGULAR.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('assets/fonts/sf-pro-display-SFPRODISPLAYMEDIUM.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('assets/fonts/sf-pro-display-SFPRODISPLAYBOLD.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BRANCHE ITALIC';
+    src: url('assets/fonts/BRANCHE/BRANCHEItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+:root {
+    --dark: #1E1E1E; /* Dark Background Color */
+    --dark-lighter: #4A4A4A; /* Lighter Dark Color */
+    --blue-solid: #337AB7; /* Blue Primary Color */
+    --gold: #B79833; /* Gold Accent Color */
+    --white: #FFFFFF; /* White Text Color */
+    --primary-font: 'SF Pro Display', sans-serif; /* Primary Font */
+    --secondary-font: 'BRANCHE ITALIC', serif; /* Secondary Font */
+}
+
+body {
+    font-family: var(--primary-font);
+    color: var(--white);
+    background-color: var(--dark);
+}

@@ -36,8 +36,14 @@
     --secondary-font: 'BRANCHE ITALIC', serif; /* Secondary Font */
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
 body {
     font-family: var(--primary-font);
     color: var(--white);
     background-color: var(--dark);
 }
+

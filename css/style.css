@@ -21,8 +21,8 @@
 
 @font-face {
     font-family: 'BRANCHE ITALIC';
-    src: url('assets/fonts/BRANCHE/BRANCHEItalic.ttf') format('truetype');
-    font-weight: normal;
+    src: url('/assets/fonts/branche/BRANCHÉ-Italic.woff') format('woff');
+    font-weight: 250;
     font-style: italic;
 }
 

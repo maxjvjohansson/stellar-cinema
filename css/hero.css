@@ -1,5 +1,5 @@
 .hero {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     font-family: var(--secondary-font);
     font-size: 2rem;
@@ -106,7 +106,7 @@
 
 .logo-container h1 {
     position: relative;
-    top: 15rem;
+    top: 14rem;
     text-align: center;
     font-size: 3rem;
     white-space: nowrap;
@@ -178,5 +178,6 @@
 
     .logo-container h1 {
         font-size: 4rem;
+        top: 11rem;
     }
 }

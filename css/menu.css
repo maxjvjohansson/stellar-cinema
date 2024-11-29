@@ -1,26 +1,121 @@
 header {
     background-color: var(--blue-solid);
+    width: 100%;
 }
 
 .menu-items {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: relative;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    width: 100%;
 }
 
 .logo-small img {
     width: 2.5rem;
     height: 2.5rem;
-    margin-top: 0.75rem;
-    margin-bottom: 0.75rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hamburger {
+    cursor: pointer;
 }
 
 .hamburger img {
     width: 2rem;
     height: auto;
-    margin-top: 0.75rem;
-    margin-bottom: 0.75rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: auto;
+    width: 100vw;
+    padding: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: opacity 0.5s ease;
+}
+
+.dropdown-menu.open {
+    display: flex;
+}
+
+.dropdown-menu li {
+    list-style: none;
+    margin: 2rem;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 2.25rem;
+}
+
+.dropdown-menu li a:hover {
+    text-decoration: underline;
+}
+
+.desktop-menu {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    
+    .menu-items {
+        display: none;
+    }
+    .dropdown-menu.open {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .desktop-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: calc(100% - 6rem);
+        margin: 0 3rem;
+    }
+
+    .logo-large {
+        margin-right: auto;
+    }
+
+    .menu-list {
+        display: flex;
+        gap: 5rem;
+        list-style: none;
+    }
+
+    .menu-list a {
+        text-decoration: none;
+        font-size: 2.25rem;
+        color: var(--white);
+    }
+
+    .search-bar {
+        margin-left: auto; 
+    }
+
+    .search-bar input {
+        width: 12rem;
+        height: 4rem;
+        font-size: 1.5rem;
+        border-radius: 1.5rem;
+        border: none;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+}

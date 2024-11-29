@@ -1,0 +1,26 @@
+header {
+    background-color: var(--blue-solid);
+}
+
+.menu-items {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-small img {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.hamburger img {
+    width: 2rem;
+    height: auto;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+

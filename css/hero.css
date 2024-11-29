@@ -173,8 +173,7 @@
     }
 
     .logo-container { 
-        transform: translateX(-50%) scale(2); 
-        margin-top: 8rem;
+        transform: translateX(-50%) scale(1.5); 
     }
 
     .logo-container h1 {

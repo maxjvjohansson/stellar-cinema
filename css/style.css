@@ -21,11 +21,10 @@
 
 @font-face {
     font-family: 'BRANCHE ITALIC';
-    src: url('/assets/fonts/branche/BRANCHÉ-Italic.woff') format('woff'),
-        url('/assets/fonts/branche/BRANCHÉ-Italic.ttf') format('truetype');   
-    font-weight: 250;
-    font-style: italic;
-}
+    font-style: normal;
+    font-weight: normal;
+    src: local('BRANCHE Italic'), url('assets/font/branche/BRANCHÉ Italic Demo.woff') format('woff');
+    }
 
 :root {
     --dark: #1E1E1E; /* Dark Background Color */

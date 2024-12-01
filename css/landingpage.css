@@ -1,23 +1,66 @@
 .movies {
     width: 100%;
-    height: 100%;
+    padding: 0 1rem;
 }
 
-.now-showing {
+.now-showing h5 {
     font-size: 1.5rem;
-    font-weight: 500;
-    width: 8rem;
+    margin-bottom: 1rem;
 }
 
 .movie-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
-    width: 10rem;
-    height: 16rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1.25rem 0.5rem;
+}
+
+.movie-card {
+    list-style: none;
+    background-color: rgba(74, 74, 74, 0.70);
+    border-radius: 1rem;
+    text-align: center; 
+    width: 100%;
 }
 
 .movie-card img {
-    width: 8rem;
-    height: 12rem;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.movie-info {
+    text-align: left;
+}
+
+.movie-title {
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.movie-genre {
+    font-size: 0.625rem;
+    color: #ccc;
+    margin-bottom: 0.5rem;
+}
+
+.movie-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.movie-actions .btn {
+    flex: 1;
+    width: 4.3rem;
+    height: 1.3rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--blue-solid);
+    color: var(--white);
+    font-size: 0.75rem;
+    cursor: pointer;
+    margin: 0 0.25rem;
 }

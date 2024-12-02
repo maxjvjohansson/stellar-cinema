@@ -1,6 +1,8 @@
 .newsletter {
     width: 100%;
+    height: 100%;
     padding: 0 1rem;
+    padding-bottom: 6rem;
 }
 
 .offer-wrapper {
@@ -10,6 +12,8 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100%;
+    padding-bottom: 6rem;
 }
 
 .offer-container {
@@ -84,15 +88,15 @@ h5 {
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    z-index: 2;
+    z-index: 10;
 }
 
 .left-arrow {
-    left: 0.5rem;
+    left: 2%;
 }
 
 .right-arrow {
-    right: 0.5rem;
+    right: 2%;
 }
 
 .arrow img {
@@ -142,6 +146,7 @@ h5 {
     .newsletter {
         padding: 0 2rem;
         padding-top: 12rem;
+        padding-bottom: 12rem;
     }
 
     .offer-container {
@@ -172,11 +177,11 @@ h5 {
     }
     
     .left-arrow {
-        left: 10rem;
+        left: 12%;
     }
     
     .right-arrow {
-        right: 10rem;
+        right: 12%;
     }
     
     .arrow img {

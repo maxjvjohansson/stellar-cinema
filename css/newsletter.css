@@ -17,50 +17,66 @@
     height: 28rem;
     border-radius: 1.5rem;
     background: rgba(74, 74, 74, 0.70);
-    overflow: hidden; /* För att dölja overflow om bilderna är för stora */
+    overflow: hidden;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .offer img {
-    max-width: 100%;
-    max-height: 150px; /* Begränsa bildhöjden så den inte orsakar containerändringar */
-    object-fit: contain; /* Bevarar bildens proportioner utan att sträcka den */
+    display: block;
+    width: 50%;
+    height: auto;
+    object-position: center;
+    object-fit: contain; 
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.offer p {
+    text-align: center;
+    font-size: 1rem;
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
 }
 
 .heading {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0;
+    padding-top: 1rem;
 }
 
 .heading img {
-    width: 30px; /* Storleken på ikonen */
+    width: 2rem;
     height: auto;
     margin-right: 0.5rem;
 }
 
 h5 {
-    color: white;
     font-size: 1.25rem;
     font-weight: bold;
 }
 
 .email-field {
-    margin-top: 1rem;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding-bottom: 2.5rem;
 }
 
 .email-field input {
-    width: 100%;
+    width: 60%; 
+    height: 2.5rem;
     padding: 0.75rem;
     border-radius: 0.5rem;
     border: none;
-    margin-bottom: 1rem;
     font-size: 1rem;
+    margin-right: 1rem;
 }
 
 .arrow {
@@ -72,23 +88,74 @@ h5 {
 }
 
 .left-arrow {
-    left: 10px;
+    left: 0.5rem;
 }
 
 .right-arrow {
-    right: 10px;
+    right: 0.5rem;
+}
+
+.arrow img {
+    width: 3rem;
+    height: 3rem;
 }
 
 .submit {
-    min-width: 4rem;
-    width: 40%;
-    height: 2rem;
+    width: auto;
+    height: 2.5rem;
+    padding: 0.75rem; 
     border: none;
     border-radius: 0.5rem;
     background-color: var(--blue-solid);
     color: var(--white);
     font-size: 0.75rem;
     cursor: pointer;
-    margin: 0 auto;
-    display: block;
+}
+
+@media (min-width: 768px) {
+
+    .newsletter {
+        padding: 0 2rem;
+        padding-top: 12rem;
+    }
+
+    .offer-container {
+        width: 80%;
+        height: auto;
+    }
+
+    .offer p {
+        font-size: 1.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .heading img {
+        width: 3rem;
+        height: auto;
+        margin-right: 0.5rem;
+    }
+
+    .offer img {
+        width: 40%;
+        height: auto;
+    }
+    
+    h5 {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    
+    .left-arrow {
+        left: 10rem;
+    }
+    
+    .right-arrow {
+        right: 10rem;
+    }
+    
+    .arrow img {
+        width: 4rem;
+        height: 4rem;
+    }
 }

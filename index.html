@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/landingpage.css">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/newsletter.css">
+    <link rel="stylesheet" href="css/footer.css">
 
     <link rel="icon" href="assets/icons/logo.svg" type="image/svg">
 </head>
@@ -81,10 +83,9 @@
 
         <div class="now-showing">
             <h5>Now showing</h5>
-        </div>
             <ul class="movie-list">
                 <li class="movie-card">
-                    <img src="assets/movie_posters/Tron_82_Poster.jpg" alt="Tron" class="movie-poster">
+                    <a href="filmpage.html"><img src="assets/movie_posters/Tron_82_Poster.jpg" alt="Tron" class="movie-poster"></a>
                     <div class="movie-info">
                         <h2 class="movie-title">Tron</h2>
                         <p class="movie-genre">Sci-Fi, Action</p>
@@ -128,16 +129,160 @@
                     </div>
                 </li>
             </ul>
+        </div>
 
     </section>
 
-    <section class="newsletter" aria-label="newsletter">
+    <section class="upcoming-movies" aria-label="upcoming movies">
+        <div class="coming-soon">
+            <h5>Coming soon</h5>
+            <ul class="movie-list">
+                <li class="movie-card">
+                    <img src="assets/movie_posters/Alien_Poster.jpg" alt="Alien" class="movie-poster">
+                    <div class="movie-info">
+                        <h2 class="movie-title">Alien</h2>
+                        <p class="movie-genre">Sci-Fi, Horror</p>
+                    </div>
+                    <div class="movie-actions">
+                        <button class="btn btn-details">Tickets</button>
+                        <button class="btn btn-trailer">More Info</button>
+                    </div>
+                </li>
+                <li class="movie-card">
+                    <img src="assets/movie_posters/Metropolis_Poster.jpg" alt="Metropolis" class="movie-poster">
+                    <div class="movie-info">
+                        <h2 class="movie-title">Metropolis</h2>
+                        <p class="movie-genre">Sci-Fi, Drama</p>
+                    </div>
+                    <div class="movie-actions">
+                        <button class="btn btn-details">Tickets</button>
+                        <button class="btn btn-trailer">More Info</button>
+                    </div>
+                </li>
+                <li class="movie-card">
+                    <img src="assets/movie_posters/Interstellar_Poster.jpg" alt="Interstellar" class="movie-poster">
+                    <div class="movie-info">
+                        <h2 class="movie-title">Interstellar</h2>
+                        <p class="movie-genre">Sci-Fi, Drama</p>
+                    </div>
+                    <div class="movie-actions">
+                        <button class="btn btn-details">Tickets</button>
+                        <button class="btn btn-trailer">More Info</button>
+                    </div>
+                </li>
+                <li class="movie-card">
+                    <img src="assets/movie_posters/TheThing_Poster.jpg" alt="The Thing" class="movie-poster">
+                    <div class="movie-info">
+                        <h2 class="movie-title">The Thing</h2>
+                        <p class="movie-genre">Horror, Sci-Fi</p>
+                    </div>
+                    <div class="movie-actions">
+                        <button class="btn btn-details">Tickets</button>
+                        <button class="btn btn-trailer">More Info</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
 
+    <section class="newsletter" aria-label="newsletter">
+        
+        <div class="offer-wrapper">
+            <div class="arrow left-arrow">
+                <img src="assets/icons/arrow_left.svg">
+            </div>
+        
+            <div class="offer-container">
+                <div class="heading">
+                    <img src="assets/icons/offer.svg">
+                    <h5>Exclusive Offers Await</h5>
+                </div>
+        
+                <!-- Offer 1 -->
+                <div class="offer" id="offer1">
+                    <p>Sign up for our newsletter and enjoy 25% off your next ticket!</p>
+                    <img src="assets/images/movie_tickets.svg">
+                </div>
+        
+                <!-- Offer 2 -->
+                <div class="offer" id="offer2" style="display: none;">
+                    <p>Enjoy a free popcorn or drink on your next visit! Sign up for our newsletter to claim your treat.</p>
+                    <img src="assets/images/snacks_drink.svg">
+                </div>
+        
+                <!-- Offer 3 -->
+                <div class="offer" id="offer3" style="display: none;">
+                    <p>Join our VIP Club for exclusive perks! Get early access to screenings, 
+                        priority booking, and special discounts. Sign up to unlock VIP benefits!</p>
+                    <img src="assets/images/vip_pass.svg">
+                </div>
+        
+                <div class="email-field">
+                    <input type="text" placeholder="you@example.com">
+                    <button class="submit">Submit</button>
+                </div>
+                <div class="slide-indicators">
+                    <span class="indicator" data-slide="1"></span>
+                    <span class="indicator" data-slide="2"></span>
+                    <span class="indicator" data-slide="3"></span>
+                </div>
+            </div>
+        
+            <div class="arrow right-arrow">
+                <img src="assets/icons/arrow_right.svg">
+            </div>
+        </div>
+        
     </section>
 
     </main>
 
-    <footer>
+    <footer class="footer">
+
+        <div class="footer-section quick-links">
+            <h5>Quick Links</h5>
+            <ul>
+                <li><a href="#showtimes">Showtimes</a></li>
+                <li><a href="#tickets">Tickets</a></li>
+                <li><a href="#snacks">Snacks & Drinks</a></li>
+                <li><a href="#theatre-info">Theatre Info</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-section social-media">
+            <h5>Social Media</h5>
+            <ul>
+                <li>
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="assets/icons/facebook.svg" alt="Facebook"> Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="assets/icons/instagram.svg" alt="Instagram"> Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="assets/icons/twitter.svg" alt="Twitter"> Twitter
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <h5>Contact</h5>
+            <p>+46 42 1337 042</p>
+            <p>info@stellarcinema.com</p>
+            <p>Hours: Mon-Sun: 10:00 AM - 11:00 PM</p>
+            <div class="map">
+                <img src="assets/images/map.png" alt="Google Maps">
+            </div>
+            <div class="location">
+                <img src="assets/icons/pin.svg" alt="Location Pin">
+                <p>Stellar Cinema<br>Lärdomsgatan 3, 417 56, Göteborg</p>
+            </div>
+        </div>
+
 
     </footer>
 

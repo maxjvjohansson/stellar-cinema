@@ -1,0 +1,218 @@
+:root {
+  --dark: #1e1e1e; /* Dark Background Color */
+  --dark-lighter: #4a4a4a; /* Lighter Dark Color */
+  --blue-solid: #337ab7; /* Blue Primary Color */
+  --gold: #b79833; /* Gold Accent Color */
+  --white: #ffffff; /* White Text Color */
+  --grey: #bdbdbd; /* Grey Text Color*/
+  --primary-font: "SF Pro Display", sans-serif; /* Primary Font */
+  --secondary-font: "BRANCHE ITALIC", serif; /* Secondary Font */
+}
+
+#media {
+  margin: 22px;
+}
+
+.videoContainer {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.playButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  cursor: pointer;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.stillsCarousel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stillsContainer {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.still {
+  height: 120px;
+}
+
+.trailerImage {
+  height: 120px;
+}
+
+.infoContainerPositioner {
+  display: flex;
+  justify-content: center;
+}
+
+.infoContainer {
+  background-color: var(--dark-lighter);
+  border-radius: 24px;
+  padding: 22px;
+  margin: 22px;
+  width: 100%;
+}
+
+#filmInfo {
+  font-size: 20px;
+}
+
+#filmInfo h1 {
+  font-size: 36px;
+}
+
+.clockContainer {
+  display: flex;
+  align-items: center;
+}
+
+.clockIcon {
+  width: 25px;
+  height: 25px;
+  margin-right: 12px;
+}
+
+.greyInfoText {
+  color: var(--grey);
+}
+
+.cast {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+#timeInfo {
+  margin: 22px;
+}
+
+.screeningsScrollMenu {
+  overflow: auto;
+  white-space: nowrap;
+  margin-top: 22px;
+  scrollbar-color: var(--blue-solid);
+  overflow-y: scroll;
+}
+
+.dateBox {
+  background-color: var(--dark-lighter);
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  height: 75px;
+  width: 150px;
+  border-radius: 24px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.dateBox:hover {
+  background-color: #777;
+  cursor: pointer;
+}
+
+.dateBox h5 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.timeBoxContainer {
+  background-color: var(--dark);
+  flex-wrap: wrap;
+  display: flex;
+  margin-top: 22px;
+  justify-content: space-between;
+}
+
+.timeBox {
+  background-color: var(--dark-lighter);
+  padding: 15px;
+  border-radius: 24px;
+  min-height: 100px;
+  width: 45%;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 22px;
+}
+
+.timeBox:hover {
+  background-color: #777;
+  cursor: pointer;
+}
+
+.timeBox h5 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+#ticketsInfo {
+  margin: 22px;
+}
+
+.ticketsBox {
+  background-color: var(--dark-lighter);
+  padding: 24px;
+  width: 100%;
+  height: 200px;
+  border-radius: 24px;
+}
+
+.ticketsBox h2 {
+  font-size: 32px;
+}
+
+.ticketCounterContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 40px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+#minus {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+#plus {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.ticketsBox button {
+  background-color: var(--blue-solid);
+  border-radius: 24px;
+  border: 0;
+  color: var(--white);
+  width: 50%;
+  height: 33px;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.ticketsBox button:hover {
+  background-color: #4694d8;
+}

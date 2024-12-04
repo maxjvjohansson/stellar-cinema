@@ -112,6 +112,15 @@
     white-space: nowrap;
 }
 
+.enter-button {
+    width: 10rem;
+    height: auto;
+    z-index: 5;
+    position: absolute;
+    bottom: 10%;
+    cursor: pointer;
+}
+
 @keyframes blink {
     0% {
         opacity: 1;
@@ -178,6 +187,18 @@
 
     .logo-container h1 {
         font-size: 4rem;
-        top: 11rem;
+        top: 10rem;
+    }
+
+    .enter-button {
+        width: 12rem;
+        height: auto;
+        z-index: 5;
+        position: absolute;
+        bottom: 5%;
+    }
+
+    .enter-button:hover {
+        opacity: 0.5;
     }
 }

@@ -53,7 +53,133 @@
     <!-- Fyll ditt innehåll inom <main> taggarna Kasper (förslagsvis med <section> taggar eller liknande)
          , på såvis kommer stjärnorna vara bakgrund på allt under header och ovan footer både på mobil/dekstop-->
     <main>
-
+        <section id="media">
+            <div class="videoContainer">
+              <video
+                id="trailerVideo"
+                poster="assets/movie_stills/Trailer Image.png"
+                width="100%"
+              >
+                <source src="assets/movie_stills/trailer.mp4" type="video/mp4" />
+                Your Browser does not support HTML5 video.
+              </video>
+              <img id="playButton" src="assets/icons/Play Icon.svg" alt="Play Button" class="playButton">
+            </div>
+    
+            <div class="stillsCarousel">
+                <div id="leftArrow">
+                    <img src="assets/icons/arrow_left.svg">
+                </div>
+                <div class="stillsContainer">
+                    <img class="trailerImage" src="assets/movie_stills/Trailer Image.png">
+                    <img class="still" src="assets/movie_stills/still1.png">
+                    <img class="still" src="assets/movie_stills/still2.png">
+                    <img class="still" src="assets/movie_stills/still3.png">
+                    <img class="still" src="assets/movie_stills/still4.png">
+                    <img class="still" src="assets/movie_stills/still5.png">
+                </div>
+                <div id="rightArrow">
+                    <img src="assets/icons/arrow_right.svg">
+                </div>
+            </div>
+            
+          </section>
+    
+          <section id="filmInfo">
+            <div class="infoContainerPositioner">
+              <div class="infoContainer">
+                <h1>TRON</h1>
+                <div class="clockContainer">
+                  <img class="clockIcon" src="assets/icons/ClockIcon.svg" />
+                  <p class="greyInfoText">1 hrs 36 min</p>
+                </div>
+                <br />
+                <p class="greyInfoText">Sci-Fi, Action</p>
+                <br />
+                <p class="greyInfoText">Language: English</p>
+                <br />
+                <p class="greyInfoText">13 years and up</p>
+              </div>
+            </div>
+    
+            <div class="infoContainerPositioner">
+              <div class="infoContainer">
+                <p>
+                  When talented computer engineer Kevin Flynn finds out that Ed
+                  Dillinger, an executive at his company, has been stealing his
+                  work, he tries to hack into the system. However, Flynn is
+                  transported into the digital world, where he has to face off
+                  against Dillinger's computerized likeness, Sark, and the imposing
+                  Master Control Program. Aided by Tron and Yori, Flynn becomes a
+                  freedom fighter for the oppressed programs of the grid.
+                </p>
+                <br />
+                <div class="cast">
+                    <p>
+                        Cast: <p class="greyInfoText">Jeff Bridges, Bruce Boxleitner, David Warner, Cindy Morgan</p>
+                      </p>
+                </div>            
+              </div>
+            </div>
+          </section>
+    
+          <section id="timeInfo">
+            <h2>Screenings</h2>
+            <div class="screeningsScrollMenu">
+                <div class="dateBox">
+                    <h5>7 Feb</h5>
+                    <p>Friday</p>
+                </div>
+                <div class="dateBox">
+                    <h5>12 Feb</h5>
+                    <p>Wednes.</p>
+                </div>
+                <div class="dateBox">
+                    <h5>15 Feb</h5>
+                    <p>Saturday</p>
+                </div>
+                <div class="dateBox">
+                    <h5>16 Feb</h5>
+                    <p>Sunday</p>
+                </div>
+            </div>
+    
+            <div class="timeBoxContainer">
+                <div class="timeBox">
+                    <h5>18:30</h5>
+                    <p>Room 319</p>
+                </div>
+                <div class="timeBox">  
+                    <h5>19:30</h5>
+                    <p>Room 319</p></div>
+                <div class="timeBox">
+                    <h5>21:00</h5>
+                    <p>Room 319</p>
+                </div>
+                <div class="timeBox">
+                    <h5>22:00</h5>
+                    <p>Room 319</p>
+                </div>
+            </div>
+          </section>
+    
+          <section id="ticketsInfo">
+            <div class="ticketsBox">
+                <h2>Tickets</h2>
+                <div class="ticketCounterContainer">
+                    <div id="plus">
+                        <img src="assets/icons/plus.svg">
+                    </div>
+                    <p id="ticketNumber">1</p>
+                    <div id="minus">
+                        <img src="assets/icons/minus.svg">
+                    </div>
+                </div>
+                <div class="buttonContainer">
+                    <button>ORDER</button>
+                </div>
+            </div>
+          </section>
     </main>
 
     <footer class="footer">
